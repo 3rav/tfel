@@ -17,7 +17,7 @@ jobs:
         with:
           msystem: UCRT64
           update: true
-          install: git mingw-w64-ucrt-x86_64-gnuplot mingw-w64-ucrt-x86_64-cc mingw-w64-ucrt-x86_64-cc mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-ninja
+          install: git mingw-w64-ucrt-x86_64-gnuplot mingw-w64-ucrt-x86_64-gcc-libgfortran mingw-w64-ucrt-x86_64-gcc-fortran mingw-w64-ucrt-x86_64-cc mingw-w64-ucrt-x86_64-cc mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-ninja
       - name: CI-Build
         run: |
           mkdir build
@@ -36,7 +36,7 @@ jobs:
         with:
           msystem: CLANG64
           update: true
-          install: git mingw-w64-clang-x86_64-gnuplot mingw-w64-clang-x86_64-gcc-libgfortran mingw-w64-clang-x86_64-gcc-fortran mingw-w64-clang-x86_64-cc mingw-w64-clang-x86_64-cc mingw-w64-clang-x86_64-cmake mingw-w64-clang-x86_64-ninja
+          install: git mingw-w64-clang-x86_64-gnuplot mingw-w64-clang-x86_64-cc mingw-w64-clang-x86_64-cc mingw-w64-clang-x86_64-cmake mingw-w64-clang-x86_64-ninja
       - name: CI-Build
         run: |
           mkdir build
